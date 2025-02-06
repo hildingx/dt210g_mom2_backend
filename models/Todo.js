@@ -5,8 +5,8 @@ const todoSchema = new mongoose.Schema({
     description: { type: String },
     status: {
         type: String,
-        enum: ["not started", "in progress", "completed"],
-        default: "not started"
+        enum: ["Ej påbörjad", "Påbörjad", "Slutförd"],
+        default: "Ej påbörjad"
     }
 }, { timestamps: true });
 
